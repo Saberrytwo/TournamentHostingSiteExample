@@ -1,0 +1,17 @@
+.spinner-border.custom-spinner {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    vertical-align: -0.125em;
+    border: 1.25em solid var(--gameset-primary-blue);
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: .75s linear infinite spinner-border;
+    animation: .75s linear infinite spinner-border;
+}
+
+.spinner-container {
+    height: 80vh;
+    width: 100%;
+
+}

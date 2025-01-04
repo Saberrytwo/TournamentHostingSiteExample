@@ -1,0 +1,33 @@
+.reg-headers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+}
+.reg-75{
+    width: 75%;
+}
+@media screen and (max-width: 900px) {
+    .reg-headers{
+        flex-direction: column;
+    }
+    .link-left{
+        align-self: start;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .reg-headers {
+        width: 100%;
+
+    }
+
+    .link-left {
+        align-self: inherit;
+    }
+    .reg-75{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        width: 100%;
+    }
+}

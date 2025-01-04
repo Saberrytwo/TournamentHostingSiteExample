@@ -1,0 +1,220 @@
+.rounded-border {
+  border: 0.1rem solid var(--light-gray);
+  box-shadow: 2px 2px 4px var(--light-gray);
+  border-radius: 50px;
+}
+.rounded-background {
+  box-shadow: 2px 2px 4px var(--light-gray);
+  background-color: var(--light-gray);
+  border-radius: 50px;
+}
+*:focus {
+  outline: none;
+}
+.vertical-line {
+  border-left: 1.5px solid var(--light-gray); /* Line color */
+  height: 35px; /* Adjust the height of the line */
+  margin-left: 1rem;
+  margin-right: 1rem; /* Remove default margin */
+}
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: flex !important;
+}
+
+.logo-text {
+  color: var(--gameset-primary-blue);
+  font-size: "2.8rem";
+}
+
+.small-search-text {
+  font-size: 0.8rem;
+}
+
+.search-divider {
+  border-left: none !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  border-right: 1px solid var(--light-gray) !important;
+}
+.w-78px {
+  min-width: 78px;
+}
+
+.w-150px {
+  min-width: 150px;
+  max-width: 200px;
+}
+.w-100px {
+  min-width: 100px;
+}
+.blue-bar {
+  background-color: var(--gameset-primary-blue);
+  padding: 0.15rem;
+}
+.small-margin {
+  margin-left: 0.1rem;
+}
+.w-125 {
+  width: 125%;
+}
+.mw-900 {
+  max-width: 900px;
+}
+.tabbing-font {
+  font-size: 1.3rem;
+}
+.gray-text {
+  color: #7d7f7c;
+}
+a.nav-tab:hover {
+  cursor: pointer !important;
+}
+.big-font {
+  font-size: 1.8rem;
+  font-family: "Teko", sans-serif !important;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+/* .suggestion-list {
+    position: absolute;
+    z-index: 1;
+    background-color: var(--light-gray);
+    width: 100%;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px var(--light-gray);
+} */
+
+.suggestion-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid #ccc;
+  top: 127px;
+  max-width: 280px;
+  overflow-y: auto;
+}
+.small-suggestion-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  border: 1px solid #ccc;
+  top: 0px;
+  max-width: 280px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 0.5rem;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.city-overflow{
+      white-space: nowrap;
+      /* Prevents the text from wrapping */
+      overflow: hidden;
+      /* Hides any content that overflows the element */
+      text-overflow: ellipsis;
+      /* Displays an ellipsis (...) to represent clipped text */
+}
+
+.tabbing-margin{
+  margin-left: 2rem;
+}
+
+.not-main-search{
+width: 25% !important;
+}
+.small-s-icon{
+      padding: 8px 10px;
+      
+}
+.padding-b-2{
+  padding-bottom: 2px; 
+}
+.ham-mobile{
+  display: none !important;
+}
+
+.mobile-sheet{
+  display: none !important;
+}
+.x-btn {
+      padding: 4px 10px;
+}
+.max-100vw{
+  max-width: 100vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .tabbing-font{
+    font-size: 1.1rem;
+  }
+  .not-main-search{
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .small-screen{
+    display: none !important;
+  }
+  .mobile-search{
+    display: flex !important;
+    width: 100% !important;
+  }
+    .mobile-sheet {
+      z-index: 1000;
+      position: absolute;
+      background-color: #eee;
+      width: 100%;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+
+        .mobile-sheet.sheet-display {
+          display: flex !important;
+          flex-direction: column !important;
+    
+        }
+                    .navbar-brand {
+                      display: none !important;
+                    }
+
+  
+}
+
+@media screen and (max-width: 580px) {
+
+  .tabbing-font {
+    font-size: .8rem;
+  }
+  .tabbing-margin {
+    margin-left: 1rem;
+  }
+
+                                                                                    .not-mobile {
+                                                                                      display: none !important;
+                                                                                    }
+                                          
+                                                                                    .ham-mobile {
+                                                                                      display: block !important;
+                                                                                    }
+
+
+}

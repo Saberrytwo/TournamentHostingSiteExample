@@ -1,0 +1,35 @@
+.name-text {
+  font-size: 14px;
+  overflow-x: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+}
+
+.team-card {
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.teams-scroll {
+  max-width: 90vw;
+  overflow-x: scroll;
+}
+.team-card-header {
+  min-width: 300px;
+  max-width: 450px;
+}
+
+.teams-container {
+  height: calc(100vh - 100px);
+}
+
+@media screen and (max-width: 800px) {
+  .tourn-teams {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .team-card-header {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding-top: 20px;
+  transition: margin-left 0.5s;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-no-ml {
+    margin-left: 0 !important;
+    margin-bottom: 60px !important;
+  }
+}

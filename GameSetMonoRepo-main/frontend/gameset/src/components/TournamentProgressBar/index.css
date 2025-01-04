@@ -1,0 +1,63 @@
+.progress-bar-container {
+  padding-bottom: 1em;
+  margin-top: 2em;
+}
+
+.progressBar {
+  max-width: 90%;
+  min-width: 90%;
+  margin: 0 auto 3em auto;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Adjust z-index as needed */
+  background-color: white;
+}
+
+.RSPBprogressBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.transitionStep {
+  filter: grayscale(1);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.transitionStep.accomplished {
+  filter: grayscale(0);
+}
+
+.icon-svg {
+  border-radius: 30%;
+  border: 0.5px solid #000;
+  /* padding: 200px; */
+}
+
+.progress-description {
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 50em) {
+  .flex-container {
+    flex-direction: column;
+    gap: 0;
+  }
+  .progressBar {
+    width: 100%;
+    margin: 0 auto 1em auto;
+  }
+  .progress-description {
+    color: transparent;
+  }
+}

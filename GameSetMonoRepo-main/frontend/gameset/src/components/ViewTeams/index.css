@@ -1,0 +1,41 @@
+.team-border{
+    border: 1px solid var(--gameset-gray-blue);
+    border-radius: .5rem;
+    width: 50%;
+    padding: 1rem;
+}
+
+.my-teams-title{
+  width: 50%;
+}
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotating {
+    animation: spin infinite 8s linear;
+  }
+  
+@media screen and (max-width: 800px) {
+  .team-border{
+    width: 75%;
+  }
+  .my-teams-title{
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .team-border {
+    width: 90%;
+  }
+
+  .my-teams-title {
+      width: 90%;
+  }
+}

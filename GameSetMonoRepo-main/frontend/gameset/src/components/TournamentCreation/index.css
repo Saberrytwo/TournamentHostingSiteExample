@@ -1,0 +1,55 @@
+.special-image-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  box-shadow: 2px 2px 4px var(--light-gray);
+}
+
+.bottom-right-button {
+  position: absolute;
+  bottom: 16px;
+  left: 0px;
+  width: 100%;
+  background-color: white;
+  border: none;
+  color: var(--gameset-navy);
+}
+
+.creation-container {
+  width: 75% !important;
+}
+
+.date-time-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+@media screen and (max-width: 50em) {
+  .special-image-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 60em) {
+  .special-date-timerow {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .date-time-container {
+    flex-direction: column;
+  }
+  .creation-container {
+    width: 100% !important;
+  }
+}

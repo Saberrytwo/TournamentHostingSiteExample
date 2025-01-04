@@ -1,0 +1,121 @@
+.sidebar {
+  height: 90.5vh;
+  width: 70px;
+  /* Initial width of the closed drawer */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  padding-top: 20px;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  border-right: 0.1rem solid var(--gameset-primary-blue);
+  position: fixed;
+  background-color: white;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: var(--gameset-light-blue);
+}
+
+.tooltip-content {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  /* Use position: fixed to position the tooltip relative to the viewport */
+  z-index: 999;
+  /* Ensure the tooltip appears above other elements */
+  bottom: 34vh;
+  /* Position the tooltip below the trigger element */
+  left: 150px;
+  transform: translateX(-50%);
+  width: 160px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  padding: 3px;
+  font-size: 12px;
+}
+.bracket-tip {
+  bottom: 25vh;
+}
+.move-left {
+  left: 250px;
+}
+
+.sidebar a.deadlink:hover .tooltip-content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip-content::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  /* Position the arrow on the left side */
+  margin-top: -5px;
+  /* Adjust the top margin to center the arrow vertically */
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #333 transparent transparent;
+  /* Adjust border-color to position the arrow on the left side */
+}
+
+.sidebar a.deadlink:hover {
+  background-color: transparent;
+}
+
+.toggle-btn {
+  font-size: 3.7rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--gameset-primary-blue);
+  font-weight: 600;
+  margin-left: 0;
+  transition: margin-left 0.5s;
+}
+
+.margin-slide {
+  margin-left: auto;
+}
+
+.icon-padding {
+  margin-right: 20px;
+}
+.bottom-bar{
+  border-top: 2px solid var(--gameset-primary-blue);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  display: none !important;
+}
+
+@media screen and (max-width: 800px) {
+
+  .sidebar{
+    display: none !important;
+  }
+  .bottom-bar{
+    display: block !important;
+  }
+}

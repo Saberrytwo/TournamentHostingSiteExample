@@ -1,0 +1,269 @@
+.data-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-label {
+  font-weight: 600;
+  font-size: medium;
+  color: var(--gameset-navy);
+  margin-bottom: 0.25em;
+}
+
+.data-value {
+  font-weight: 400;
+  font-size: medium;
+  color: darkslategray;
+}
+
+.tournament-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 1.5em;
+}
+
+.subhead .data-label {
+  font-size: 1.5em;
+  font-weight: 500;
+  margin-left: 2em;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid var(--gameset-primary-blue) !important;
+  border-radius: 5px;
+  margin: 0 2em 2em 2em;
+  opacity: 1;
+}
+
+.tournament-map {
+  min-width: 35%;
+  display: flex;
+}
+
+.tournament-map div {
+  max-height: 300px;
+}
+
+.tournament-info-map-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tournament-details {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 75%;
+  max-width: 75%;
+  margin-bottom: 5em;
+}
+
+/* .extra-top-padding {
+  padding-top: 40px;
+} */
+
+.admin-tournament-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-group {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+.details-items {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.detail-item {
+  flex: 1;
+}
+
+.details-row {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  width: 100%;
+}
+
+.registration {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.registration-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.rounded-tournament-image {
+  max-width: 12.5rem;
+  min-width: 12.5rem;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 0.625rem;
+}
+
+.register-button {
+  padding: 0.5em 1em;
+  border-radius: 0.625rem;
+  min-width: 5em;
+  cursor: pointer;
+}
+
+.division-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--gameset-primary-blue);
+  border-radius: 0.625rem;
+  padding: 20px;
+  width: 100%;
+  flex: 1;
+  max-width: 33%;
+}
+
+.map-toggle {
+  align-self: flex-end;
+  margin-left: 10px;
+  margin-bottom: -3px;
+  font-size: small;
+  cursor: pointer;
+  border: none;
+  color: var(--gameset-primary-blue);
+}
+
+.map-toggle:hover {
+  color: var(--gameset-medium-blue);
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.reg-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registration-closed {
+  margin-left: 20px !important;
+}
+
+.back-button-discovery {
+  background-color: transparent;
+  border: none;
+  margin-left: -8px;
+}
+
+.back-button-discovery:hover {
+  color: var(--gameset-primary-blue);
+}
+
+.role-button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: 1px solid #eee;
+  border-left-width: 0.25rem;
+  border-left-color: orange;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+
+.role-button button {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 50em) {
+  .register-button {
+    align-self: flex-start;
+    min-width: 100%;
+  }
+
+  .reg-button-container {
+    width: 100%;
+    display: block;
+  }
+
+  .registration {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tournament-map div {
+    max-height: 200px;
+  }
+
+  .tournament-details {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 35em) {
+  .image-row {
+    flex-direction: column;
+  }
+  .registration-details {
+    padding: 0px;
+  }
+  .register-button {
+    margin-left: 0px !important;
+  }
+  .registration {
+    padding: 0px;
+  }
+  .rounded-tournament-image {
+    min-width: 100%;
+  }
+  .address-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .map-toggle {
+    align-self: flex-start;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+  .division-container {
+    max-width: 100%;
+  }
+  .registration-closed {
+    margin-left: 0px !important;
+  }
+}

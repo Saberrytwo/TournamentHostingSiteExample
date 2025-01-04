@@ -1,0 +1,31 @@
+.create-team{
+    display: flex !important;
+    justify-content: center !important;
+    margin-left: 2rem;
+}
+
+.main-team-div{
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .create-team{
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-left: 0;
+    }
+
+    .mobile-border-off{
+        border: none !important;
+        padding-top: 1.5rem;
+    }
+
+    .player-mobile{
+         width: 75%;
+    }
+
+        .main-team-div {
+            width: 75%;
+        }
+    
+}

@@ -1,0 +1,14 @@
+.small-text{
+    font-size: .8rem !important;
+    color: darkgray !important;
+}
+.profile-width{
+    width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+    .profile-width{
+        width: 75%;
+    }
+}
+

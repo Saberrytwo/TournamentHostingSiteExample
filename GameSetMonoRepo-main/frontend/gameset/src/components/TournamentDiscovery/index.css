@@ -1,0 +1,56 @@
+.tournaments-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.no-content{
+  height: 30vh;
+}
+.fake-link{
+  color:var(--gameset-primary-blue);
+  text-decoration: underline;
+}
+.fake-link:hover{
+  cursor:pointer;
+}
+
+
+.search-results-container {
+  padding: 1rem;
+}
+
+.tourn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .tourn-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+    .mobile-no-br {
+        display: none;
+      }
+    
+      .container-fluid {
+        margin-top: 1rem;
+      }
+  
+}
+@media screen and (max-width: 740px) {
+  .tourn-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header{
+    text-align: center;
+  }
+
+}

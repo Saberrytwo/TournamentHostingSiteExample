@@ -1,0 +1,25 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyb852994f7fa34-staging-191727-authRole",
+      "UnauthRoleArn": "arn:aws:iam::309670404487:role/amplify-amplifyb852994f7fa34-staging-191727-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::309670404487:role/amplify-amplifyb852994f7fa34-staging-191727-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifyb852994f7fa34-staging-191727-deployment",
+      "UnauthRoleName": "amplify-amplifyb852994f7fa34-staging-191727-unauthRole",
+      "StackName": "amplify-amplifyb852994f7fa34-staging-191727",
+      "StackId": "arn:aws:cloudformation:us-east-1:309670404487:stack/amplify-amplifyb852994f7fa34-staging-191727/369d7b90-baed-11ee-9b12-0ac76a49f917",
+      "AmplifyAppId": "d1tf7be7t603k3"
+    },
+    "categories": {
+      "auth": {
+        "gamesetmonorepofront31061905": {}
+      },
+      "geo": {
+        "mapb30f6e4c": {},
+        "mape999999": {},
+        "map00000": {}
+      }
+    }
+  }
+}
